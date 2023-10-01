@@ -161,7 +161,7 @@ UserInputService.InputBegan:Connect(function(Input)
         
         if _G.SendNotifications == true then
             game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Aqurik13 Prod";
+                Title = "ESP";
                 Text = "The ESP's visibility is now set to "..tostring(_G.ESPVisible)..".";
                 Duration = 5;
             })
@@ -176,7 +176,7 @@ end)
 if Success and not Errored then
     if _G.SendNotifications == true then
         game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "Aqurik13 Prod";
+            Title = "ESP";
             Text = "ESP script has successfully loaded.";
             Duration = 5;
         })
@@ -184,7 +184,7 @@ if Success and not Errored then
 elseif Errored and not Success then
     if _G.SendNotifications == true then
         game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "Aqurik13 Prod";
+            Title = "ESP";
             Text = "ESP script has errored while loading, please check the developer console! (F9)";
             Duration = 5;
         })
